@@ -23,8 +23,7 @@ for (i in listdata){
         iterislice = iteri.slice(j)
         for (numstr in numberstr){
             if (iterislice.slice(0, numstr.length) == numstr){
-                numbers.push(numberstr[numstr])
-                j++
+                numbers.push(numberstr[numstr]) 
                 found = true
                 break
             }
@@ -34,8 +33,8 @@ for (i in listdata){
             if (isNumeric(noi)){
                 numbers.push(parseInt(noi))
             }
-            j++
         }
+        j++
     }
     // console.log(numbers)
     total+=(numbers[0]*10+numbers[numbers.length-1])
