@@ -19,7 +19,7 @@ data = data.map((value) =>{
     winning = winning.trim().split(" ").filter(v=>v.length>0)
     oncard = oncard.filter(v=> winning.includes(v))
     return oncard
-}).map(v=>[v.length, 1]).map(peek)
+}).map(v=>[v.length, 1])//.map(peek)
 
 data.forEach((val, idx)=>{
     let [win, amount] = val

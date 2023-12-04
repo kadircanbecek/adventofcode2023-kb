@@ -18,6 +18,7 @@ data = data.map(value =>{
     winning = winning.trim().split(" ").filter(v=>v.length>0)
     oncard = oncard.filter(v=> winning.includes(v))
     return oncard
-}).map(v=>v.length>0?(2**(v.length-1)) : 0).map(peek).reduce((acc,curr)=>acc+curr,0)
+}).map(v=>v.length>0?(2**(v.length-1)) : 0)//.map(peek)
+.reduce((acc,curr)=>acc+curr,0)
 
 console.log(data)
